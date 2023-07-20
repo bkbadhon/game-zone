@@ -83,6 +83,15 @@ body{
     }
 }
 
+@media screen and (max-width:768px) {
+
+    .navbar{
+        margin: 0px;
+    }
+
+    
+}
+
 
 .header-container{
     display: flex;
@@ -103,7 +112,10 @@ body{
 
 .header-details h1{
     font-size: 95px;
-    color: #8758F1;
+    background: linear-gradient(#F948B2 , #8758F1 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
 }
 
 .header-details h4{
@@ -161,6 +173,28 @@ body{
     }
 }
 
+
+@media screen and (max-width:768px) {
+    .header-container{
+        margin: 0px;
+        padding-top: 20px;
+    }
+
+    .header-img img{
+        width: 400px;
+        margin-bottom: 20px;
+    }
+
+    .header-details h1{
+        font-size: 80px;
+    }
+
+    .header-details h2{
+        font-size: 23px;
+    }
+
+}
+
 .about-us{
     margin: 40px 120px 0px 120px;
     display: flex;
@@ -173,7 +207,9 @@ body{
 }
 
 .about-des h2{
-    color: #8758F1 ; 
+    background: linear-gradient(#F948B2 , #8758F1 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-bottom: 20px;
     font-size: 48px; 
 }
@@ -217,6 +253,27 @@ body{
         text-align: center;
     }
 }
+@media screen and (min-width:576px; max-width:768px) {
+    .about-us{
+        margin-bottom: 20px;
+        margin: 50px 0px 80px 0px;
+
+    }
+
+    .about-img img{
+        width: 350px;
+        margin-bottom: 20px;
+    }
+
+    .about-des{
+        text-align: right;
+    }
+
+    .about-des h2{
+        font-size: 34px;
+        text-align: center;
+    }
+}
 
 .videos{
     margin: 40px 120px 20px 120px;
@@ -233,13 +290,17 @@ body{
 }
 
 .video-title h2 span{
-    color: #8758F1;
+    background: linear-gradient(#F948B2 , #8758F1 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;8F1;
 }
 
 .video-title p{
     color:#534C64; 
     margin-bottom: 80px;
 }
+
+
 
 .boxes{
     display: grid;
@@ -260,6 +321,31 @@ body{
 }
 
 
+.box-3{
+    position: relative;
+    top: 0;
+}
+
+
+
+
+.overley p{
+    position: absolute;
+    left: 0%;
+    top: 0px;
+    color:white !important;
+    background: rgba(0, 0, 0, .5);
+    font-size: 10px;
+    width: 100%;
+    height: 80%;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+
 @media screen and (max-width:576px) {
     .video-title h2{
         font-size: 20px;
@@ -274,6 +360,9 @@ body{
         grid-template-columns: 1fr;
     }
 
+   .overley{
+    opacity: 0;
+   }
 
     .box img{
         width: 70%;
@@ -285,6 +374,40 @@ body{
 
     .box p{
         font-size: 7px;
+        margin-top: -20px;
+    }
+}
+@media screen and (min-width:576px; max-width:768px) {
+    .video-title h2{
+        font-size: 30px;
+        margin-top: 50px;
+    }
+
+    .video-title p{
+        font-size: 14px;
+    }
+
+    .videos{
+        margin: 40px 0px 20px 0px;
+    }
+
+    .overley p{
+        width: 90%;
+        height: 43%;
+        top: 20px;
+    }
+
+
+    .box img{
+        width: 90%;
+    }
+
+    .box{
+        margin-left: 90px;
+    }
+
+    .box p{
+        font-size: 10px;
         margin-top: -20px;
     }
 }
@@ -306,7 +429,9 @@ body{
 }
 
 .online-play-des h2 span{
-    color: #8758F1;
+    background: linear-gradient(#F948B2 , #8758F1 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .online-play-des p{
@@ -329,6 +454,8 @@ body{
     left: 340px;
 }
 
+
+
 @media screen and (max-width:576px) {
     .online-play{
         flex-direction: column-reverse;
@@ -350,12 +477,48 @@ body{
     }
 
     .secondary-img img{
-        max-width:230px;
-        height: 230px;
+        width: 180px;
+        height: 180px;
         top: -200px;
         position: absolute;
         left: -160px;
     }
+}
+
+@media screen and (min-width:576px; max-width:768px) {
+    .online-play{
+        margin: 100px 0px 40px 0px;
+    }
+
+    .main-img img{
+        width: 300px;
+        position: relative;
+    
+    }
+    .secondary-img img{
+        width: 180px;
+        height: 180px;
+        top: -150px;
+        position: absolute;
+        left: -160px;
+    }
+
+    .online-play-img {
+        top: 0px;
+        left: 0px;
+    }
+
+    .online-play-des h2{
+        font-size: 37px;
+        text-align: right;
+    }
+    .online-play-des p{
+        font-size: 12px;
+        text-align: right;
+        max-width: 300px;
+    }
+ 
+   
 }
 
 
@@ -386,6 +549,18 @@ body{
     .newsletter{
         flex-direction: column;
         text-align: center;
+        margin-bottom: 100px;
+    }
+
+    .subscribe input{
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .newsletter{
+        text-align: center;
+        margin: 0px;
         margin-bottom: 20px;
     }
 
@@ -459,6 +634,33 @@ body{
 
     .game h4, .game-2 h4{
         font-size: 7px;
+    }
+
+    .games-catagory2{
+        margin: 0px 50px 50px 50px;
+        justify-content: space-around;
+    }
+
+   
+}
+
+
+
+@media screen and (max-width:768px) {
+    .games-catagory{
+        margin: 0px;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+ 
+
+    .game img, .game-2 img{
+        
+    }
+
+    .game h4, .game-2 h4{
+        
     }
 
    
@@ -540,6 +742,7 @@ body{
         grid-template-columns: 1fr 1fr 1fr;
         gap: 3px;
         margin-bottom: 30px;
+        margin-left: 0px;
     }
 
     .social-icons ul{
@@ -547,6 +750,7 @@ body{
         grid-template-columns: 1fr 1fr 1fr;
         gap: 5px;
     }
+
 
     .terms ul{
         display: grid;
